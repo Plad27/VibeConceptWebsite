@@ -1,0 +1,22 @@
+{
+  "name": "socialmediaconcept",
+  "version": "1.0.0",
+  "description": "1. <h3> Project description: </h3>  Vibe is an concept of a social media platform. A lot of the idea is yet to be developed. This website is only a exploratory starting point. This website was for SE_19.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

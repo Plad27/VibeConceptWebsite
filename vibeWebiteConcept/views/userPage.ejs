@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Check yo Vibe.</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <meta name ="viewport" content ="width=device-width, inital-scale=1.0"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <img src="/assests/logo.png" alt="logo" class="logo">
+        
+    </head>
+    <style>
+        *{
+        font-family: Urbanist;
+        background-color: #000000;
+        }
+        .logo {
+            width: 150px;
+            height: 60px;
+            margin: 10px;
+            position:absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+    </style>
+    <header>
+        <nav>
+            <div class="top-menu">
+                </button>
+                    <ul class="top-menu-links">
+                                               
+                    </ul> 
+            
+            </div>
+        </nav>
+    </header>
+    <body style="color: #ffffff";>
+        <br>
+        <br>
+        <br>
+        <h3> You are now viewing <%= User.userId%>'s page</h3>
+        <p>Contact :<%= User.emailId %> </p>
+    </body>
+
+</html>

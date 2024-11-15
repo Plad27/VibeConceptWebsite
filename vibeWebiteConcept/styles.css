@@ -1,0 +1,338 @@
+*{
+    font-family: Urbanist;
+    background-color: #000000;
+}
+
+
+
+/*CSS for index.html*/
+
+nav {
+    background-color: #000000;
+    font-weight: 450;
+}
+
+nav ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.0rem;
+    padding: 10px 20px;
+    display: inline-block;
+    padding: 10px 5px; 
+    text-align: left;
+    border-radius: 50px; 
+}
+
+nav ul li a:hover {
+    background-color: #7a32e6;
+    color: #000000;
+    border-radius: 2.5px;
+    padding: 10px 10px; 
+    text-align: left;
+    border-radius: 50px; 
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        padding: 15px 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+}
+
+.top-menu{
+     @media (width < 40em){
+        position: fixed;
+        inset: 0;
+        padding: 1.5rem;
+        background-color: aliceblue;
+        translate: 100vw 0;
+        transition: translate 0.5s ease-in-out;
+     }
+     
+}
+
+.top-menu-links{
+    @media(width < 40em) {
+        flex-direction: column  ;
+    }
+}
+
+.menu-close-button {
+    background: none;
+    border: none;
+    padding: 0;
+    @media (width>=40em){
+        display: none;
+    }
+
+    display: block;
+    margin-inline-start: auto;
+    margin-block-end: 8rem;
+
+}
+.menu-close-button-img{
+    img{
+    @media (width>=40em) {
+        display: none;
+    }    
+        width: 2.5rem 
+    }
+}
+
+.menu-open-button {
+    background: none;
+    border: none;
+    padding: 0;
+    @media (width>=40em){
+        display: none;
+    }
+
+    display: block;
+    margin-inline-start: auto;
+    margin-block-end: 8rem;
+
+}
+
+.logo {
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+    position:absolute;
+    top: 0;
+    left: 0;
+  }
+
+.commingsoon-text{
+    color: #7a32e6;
+    font-size: 5rem;
+    margin-top: 65px;
+    text-align: center;
+    font-size: clamp(2rem, 1.7179rem + 5.4701vw, 5rem);
+}
+
+.heading-font {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-top: 65px;
+    text-align: center;
+    font-size: clamp(1rem, -0.2821rem + 5.4701vw, 3rem);
+    
+}
+
+.homepagetext{
+    color: azure;
+    font-size: 20px;   
+    text-align: center;
+    align-items: center;
+    font-size: clamp(0.625rem, 0.024rem + 2.5641vw, 1.5625rem);
+}
+
+.learn-more-button{
+    width: 100;
+    
+    top: 0;
+    right: 100;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.0rem;
+    color: #ffffff; 
+    background-color: rgb(47, 47, 47); 
+    border-style: dashed;
+    padding: 10px 5px; 
+    border-radius: 580px; 
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    z-index: 10;
+    border: 2px solid black;
+    text-decoration: none;
+
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more-button:hover {
+    background-color:#ffffff; 
+    color:#7a32e6; 
+    text-decoration: none; 
+}
+
+
+.loginbutton{
+    
+    width: 80;
+    height: 20px;
+    margin: 5px;
+    position:absolute;
+    top: 0;
+    right: 100;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.0rem;
+    color: black; 
+    background-color: white; 
+    padding: 10px 5px; 
+    text-align: left;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    z-index: 100;
+    border: 2px solid black;
+    text-decoration: none; 
+    
+    margin: 10px;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+.loginbutton:hover {
+    background-color: #7a32e6; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.signupbutton{
+    width: 80px;
+    height: 20px;
+    margin: 5px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.0rem;
+    color: black; 
+    background-color: white; 
+    padding: 10px 5px; 
+    text-align: left;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    z-index: 100;
+    border: 2px solid black;
+    text-decoration: none; 
+    
+    margin: 10px;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.signupbutton:hover {
+    background-color: #7a32e6bb   ; 
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+
+/* CSS for loginPage.html */
+
+.login-container {
+
+    font-family: Urbanist;
+    color: #ffffff;
+    background-color: #2c2c2c; 
+    position:absolute;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    font-family: Urbanist;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-family: Urbanist;
+    margin-bottom: 45px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #3c3c3c; 
+    color: #f4f4f9; 
+}
+
+button {
+    font-family: Urbanist;
+    padding: 10px;
+    background-color: #7a32e6;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #7a32e6;
+}
+
+.admin-text{
+    color: #ffffff;
+}
+
+.admin-log-out{
+    width: 80px;
+    height: 20px;
+    margin: 5px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.0rem;
+    color: black; 
+    background-color: white; 
+    padding: 10px 5px; 
+    text-align: left;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    z-index: 100;
+    border: 2px solid black;
+    text-decoration: none; 
+    
+    margin: 10px;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+.admin-log-out:hover{
+    background-color: #7a32e6bb   ; 
+    color: #ffffff; 
+    text-decoration: none; 
+}

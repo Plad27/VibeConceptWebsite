@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Check yo Vibe.</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <meta name ="viewport" content ="width=device-width, inital-scale=1.0"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <img src="/assests/logo.png" alt="logo" class="logo">
+        
+    </head>
+    <style>
+        *{
+        font-family: Urbanist;
+        
+        }
+        .logo {
+            width: 150px;
+            height: 60px;
+            margin: 10px;
+            position:absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+    </style>
+    <header>
+        <nav>
+            <div class="top-menu">
+                </button>
+                    <ul class="top-menu-links">
+                                               
+                    </ul> 
+            
+            </div>
+        </nav>
+    </header>
+    <body>
+        <br>
+        <br>
+        <br>
+
+        <!-- ##### -->
+        <form action="/edit/<%= User.userId %>" method="POST">
+            <h3>You are now editing <%= User.userId %>'s profile</h3>
+            <input type="text" value="<%= User.userId %>" name="userId" placeholder="User ID" /><br />
+            <input type="email" value="<%= User.emailId %>" name="emailId" placeholder="Email" /><br />
+            <button type="submit">Save</button>
+        </form>
+
+        <form action="/edit/<%= User.userId %>/del" method="POST">
+            <button>Delete</button>
+        </form>
+        
+    </body>
+
+</html>
